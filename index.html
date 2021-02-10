@@ -1,0 +1,58 @@
+<!-- Don't use these tags in data vis:
+    .container, .row, li .first, li .last, #main, #main-content, full--width, conatiner--content, .tertiary, .primary, .primary--content, .entity, .paragraphs-item-figure, .align-right, 
+    ** .graphic (can use if want their style top border and bottom border + margins)
+    ** .figure, .figure__head, .caption, .caption, , 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-------------------(only put scripts in above figure in Markup)---------------------->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://d3js.org/queue.v1.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <!-------------------------------------------------------------------------------------->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <!---Remove "template", replace this ^ with style.css in practice --->
+  </head>
+</html>
+<body>
+  <div class="column">
+    <!----------------------(below goes into Markup)-------------------------------------------->
+    <figure class="graphic">
+      <h2 class="figure_hed">An inadequate patchwork</h2>
+      <figcaption class="figure_dek">
+        <p class="p1">
+          Uneven and rare sequencing of virus samples means that the U.S. is
+          blind to emerging coronavirus variants. Hawaii sequences the most, at
+          2.6% of lab-identified cases. Experts are calling for at least 5%
+          nationally.
+        </p>
+      </figcaption>
+      <div class="interactive_container">
+        <div class="interactive_explainer">
+          <p>Click on a state for more details</p>
+        </div>
+        <div id="interactive"></div>
+      </div>
+      <div class="footnote_credit">
+        <span class="credit"
+          >(Graphic) K. Franklin/Science; (Data) GISAID; Johns Hopkins
+          Coronavirus Resource Center</span
+        >
+      </div>
+    </figure>
+    <!------------------------------------------------------------------------------------------>
+    <script src="script.js"></script>
+    <!---Remove "template" ^ --->
+  </div>
+</body>
